@@ -17,6 +17,9 @@ img, button {
 img {
   width: 80%;
 }
+button {
+  font-size: 3.2rem;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
