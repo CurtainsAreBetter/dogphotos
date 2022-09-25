@@ -12,6 +12,15 @@ function fetchImage () {
             console.log(`error ${err}`)
         });
     console.log('woof');
+    fetch('https://owen-wilson-wow-api.herokuapp.com/wows/random')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data[0].audio);
+            const audio = new Audio(data[0].audio);
+            audio.play();
+            
+        })
+        .catch(err => console.log(`Error from ${url}: ${err}`));
 }
 
 btn.addEventListener('click', fetchImage);
