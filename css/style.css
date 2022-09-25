@@ -10,12 +10,19 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
 img, button {
-  display: block;
-  margin: 0 auto;
+
+
 }
 img {
-  height: 80vh;
+  max-height: 80vh;
+  max-width: 100vw;
 }
 button {
   font-size: 10vh
